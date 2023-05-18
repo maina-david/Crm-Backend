@@ -1,0 +1,9 @@
+/vendor
+.env
+.idea
+/node_modules
+Local-Test.http
+whatsapp message.json
+convo-status.json
+chatflow.json
+ticketflow.json

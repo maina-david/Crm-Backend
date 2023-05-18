@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CdrTableUpdate extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('cdr_tables', function (Blueprint $table) {
+            $table->decimal("queue_time", 8, 2)->after("call_date")->default(0);
+            $table->decimal('time_to_answer', 8, 2)->after("queue_time")->default(0);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('cdr_tables', function (Blueprint $table) {
+            $table->dropColumn('queue_time');
+        });
+    }
+}

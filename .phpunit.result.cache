@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Feature\\CustomerInformationTest::test_example":3,"Tests\\Feature\\PhoneFormatTest::test_example":3},"times":{"Tests\\Feature\\CustomerInformationTest::test_example":0.516,"Tests\\Unit\\ExampleTest::test_example":0.007,"Tests\\Feature\\ExampleTest::test_example":0.262,"Tests\\Feature\\PhoneFormatTest::test_example":0.349}}
